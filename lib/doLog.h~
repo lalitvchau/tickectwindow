@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include"login.h"
+void doLogin(){
+   char pass[20]="xyz", repass[20]="zxy";
+  while(1){
+
+   while(isPass(pass,repass)==0){
+
+        printf("\n\t\t\tEnter Your Password = ");
+        scanf("%s",&pass);
+        printf("\n\t\t\tConform Your Password = ");
+        scanf("%s",&repass);
+        if(isPass(pass,repass)==0) printf("\nSorry ! Password and Conform Password Not Matched . Try Agian\n");
+   }
+        if(doLogin(pass)==1){
+                 printf("\n****************************\n\t\tLogin Success !\n****************************\n");
+                 return;
+        }
+        printf("\n****************************\n\t\tWrong Password !\n\t\tTry Again\n****************************\n");
+        pass[0]='\0';
+  }
+}
+
+
+
+
+
+       printf("\n************************************************************************************\n");
+        printf("\t\t\tThank you for use... Ticket Window (Train Reservation)");
+       printf("\n************************************************************************************\n");
+     return 1
+}

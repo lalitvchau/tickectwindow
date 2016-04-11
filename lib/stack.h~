@@ -1,0 +1,48 @@
+void trainStatus(){
+   int trNum;
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tTrain Status Window");
+     printf("\n----------------------------------------------------------------");
+     printf("\nEnter the Train Number : ");
+     scanf("%d",&trNum);
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tTrain Status Window is Exit..............!");
+     printf("\n----------------------------------------------------------------");
+
+   return;
+}
+void tickStatus(){
+     char date[11];
+     int tickNum;
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tTicket Status Window");
+     printf("\n----------------------------------------------------------------");
+     printf("\nEnter the Ticket Number : ");
+     scanf("%d",&tickNum);
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tTicket Status Window is Exit..............!");
+     printf("\n----------------------------------------------------------------");
+   return;
+}
+void showStatus(){
+     int ch;
+     
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tStatus Window");
+     printf("\n----------------------------------------------------------------");
+     while(1){
+         printf("\n Choices : 1 for Train Status.\n\t2 : for PNR Status\n\t3: Go to Back Main Menu");
+         printf("\nPlease Enter Your Choice : ");scanf("%d",&ch);
+
+         if(ch==1) trainStatus();
+         else if(ch==2) tickStatus();
+         else if(ch==3) return;
+         else {
+            printf("\n\tYou have entered choice..! Please Re-Enter Choice ");
+         }
+     }
+     printf("\n----------------------------------------------------------------");
+     printf("\n\t\tStatus Window is Exit..............!");
+     printf("\n----------------------------------------------------------------");
+
+}
