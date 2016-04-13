@@ -2,6 +2,7 @@
 #include"admin.h"
 #include"ticket.h"
 #include"status.h"
+#include"TikCancel.h"
 void viewTrains(){
      char name[100];
      int number;
@@ -69,7 +70,8 @@ void dispScreen(){
       switch(choice){
            case 1 : bookTicket();
                     break;
-           case 2 : break;
+           case 2 : tikCancel();
+                    break;
            case 3 : showStatus();
                     break;
            case 4 : viewTrains();

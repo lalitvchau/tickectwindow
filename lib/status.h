@@ -15,8 +15,8 @@ int showTick(char path[], int ticNum,int type){
                             fcloseall();
                  break;
             }
-                       fcloseall();
         }
+     fcloseall();
         if(flag==0){
             
     printf("\n\n\n\n************************************************************");

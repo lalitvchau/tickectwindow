@@ -386,7 +386,7 @@ void bookTicke(int type){
      printf("\n\t\tName (First Name) = "); scanf("%s",pass.name);
      printf("\n\t\tLast Name = "); scanf("%s",pass.lName);
      printf("\n\t\tCity = "); scanf("%s",pass.city);
-     printf("\n\t\tContect = "); scanf("%s",pass.con);
+     printf("\n\t\tMobile No. = "); scanf("%s",pass.con);
      printf("\n\t\tEnter Following The Journey Details - ");
      if(type!=1) {
        while(1){

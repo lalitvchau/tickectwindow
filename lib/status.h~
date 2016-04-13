@@ -15,8 +15,8 @@ int showTick(char path[], int ticNum,int type){
                             fcloseall();
                  break;
             }
-                       fcloseall();
         }
+     fcloseall();
         if(flag==0){
             
     printf("\n\n\n\n************************************************************");
@@ -238,14 +238,16 @@ void showStatus(){
                   break;
          case 2 : tickStatus(); 
                   break;
-         case 3 :  return; 
-         default :  printf("\n\tYou have entered choice..! Please Re-Enter Choice ");
-                        printf("\n----------------------------------------------------------------");
+         case 3 :  
+                 printf("\n----------------------------------------------------------------");
 		     printf("\n\t\tStatus Window is Exit..............!");
 		     printf("\n----------------------------------------------------------------");
-
+                   
+                  return; 
+         default :  printf("\n\tYou have entered choice..! Please Re-Enter Choice ");
+       
       
-     }
+           }
    }
  
 }
