@@ -61,7 +61,7 @@ void dispScreen(){
    int choice=0;
    while(1){
       printf("\n\n\n=================================================================================\n");
-      printf("The Main Menus :: Choices are Follwing\n-------------------------------------------\n\t\t1. Ticket Reservation\n\t\t2. Ticket Cancel\n\t\t3. Tickets and Trains Status\n\t\t4. Train Details Chart \n\t\t5. Admin Login\n\t\t6. Exit");
+      printf("The Main Menus :: Choices are Follwing\n-------------------------------------------\n\t\t1. Ticket Reservation\n\t\t2. Ticket Cancellation\n\t\t3. Tickets and Trains Status\n\t\t4. Train Details Chart \n\t\t5. Admin Login\n\t\t6. Exit");
       printf("\n=================================================================================\n");   
       printf("\nPlease Enter The Choice = ");
       scanf("%d",&choice);
