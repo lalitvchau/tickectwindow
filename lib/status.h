@@ -244,7 +244,7 @@ void showStatus(){
 		     printf("\n----------------------------------------------------------------");
                    
                   return; 
-         default :  printf("\n\tYou have entered choice..! Please Re-Enter Choice ");
+         default :  printf("\n\tYou have entered choice invalid..! Please Re-Enter Choice ");
        
       
            }

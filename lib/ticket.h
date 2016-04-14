@@ -178,7 +178,7 @@ int saveTicket(int type){
       fclose(fpr);
       fpr5=fopen(fileName,"a+");
       fprintf(fpr5,"%d %s %s %s %s %d %s %s %d %d %s %d %d %s %f",pass.nn,pass.name,pass.lName,pass.city,pass.con,pass.trNum,pass.trainName,pass.src,pass.srcHH,pass.srcMM,pass.des,pass.desHH,pass.desMM,pass.date,pass.charge);
-      if(type!=1){ fprintf(fpr5," %c%d\n",pass.stat,pass.sheet+1);}
+      if(type!=1){ fprintf(fpr5," %c%d\n",pass.stat,pass.sheet);}
       else{
          fprintf(fpr5,"\n");
       }

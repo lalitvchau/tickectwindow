@@ -44,6 +44,7 @@ int showCancelTick(char path[], int ticNum,int type,int trrNum){
                         printf("\n\tThank you ! you have not cancel ticket......");
                         return 1;
                     }
+                fprintf(fpr2,"000000 %s %s %s %d %d %s %s %d %d %s %d %d %s %d %d %f %s\n",fName,lName,city,tel,trainNum,tName,src,SH,SM,des,DH,DM,mm,dd,yy,rate,seat);
             }else{ 
                 fprintf(fpr2,"%d %s %s %s %d %d %s %s %d %d %s %d %d %s %d %d %f %s\n",tNum,fName,lName,city,tel,trainNum,tName,src,SH,SM,des,DH,DM,mm,dd,yy,rate,seat);
 
